@@ -1,0 +1,290 @@
+/* ===================
+	Middle Style
+
+	Project: PHP_Site;
+	Type: Middle Styles;
+	Author: Gi3a;
+
+=================== */
+
+
+/* ===================
+	Settings
+=================== */
+
+.page{
+	display: flex;
+	flex-direction: column;
+	
+}
+
+
+hr{
+	width: 30%;
+	margin: auto;
+	border: none;
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+
+/* ===================
+	1. Blocks Page
+=================== */
+	
+	.block{
+		display: flex;
+		justify-content: center;
+	}
+
+/* ===================
+	2. Forms
+=================== */
+
+.form{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	margin: auto;
+	transition: 0.5s all;
+}
+
+.form-block,
+.form-block__in{
+	display: flex;
+	margin: 10px 0px 10px;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.form-block__double{margin: 0;padding: 0;}
+
+.form-block__in{width: 50%;}
+
+.form__label{
+	position: absolute;
+    top: -1.3%;
+    background: #fff;
+    left: 3%;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 14.5px;
+    color: #777;
+    font-family: GothaProReg;
+}
+
+.form__input{
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 13px;
+	cursor: pointer;
+	margin: 10px 0px;
+	background: #fff;
+	border-radius: 3px;
+	font-family: GothaProReg;
+}
+
+.form-block:focus input[type='text'],
+.form-block:hover input[type='text'],
+.form-block:focus input[type='password'],
+.form-block:hover input[type='password']{
+	color: black;
+	border-color: black;
+}
+
+.form-block:focus label,
+.form-block:hover label{
+	color: black;
+}
+
+.form__button,
+.form__submit{
+	width: 100%;
+	padding: 13px;
+	cursor: pointer;
+	margin: 10px 0px;
+	border-radius: 3px;
+	background: #2a81dd;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-family: "Verdana", Arial, Helvetica, sans-serif;
+}
+
+.form__button:hover,
+.form__submit:hover{
+	background: #0aa9d7;
+}
+
+.form__mistake{
+	position: absolute;
+	width: 100%;
+	bottom: -27%;
+	text-align: center;
+	color: red;
+	font-size: 12px;
+}
+
+
+.form__under{
+	margin: 1%;
+}
+
+.form__under span,
+.form__under a{
+	margin: 3px;
+    font-family: GothaProReg;
+    text-align: center;
+    font-size: 14.5px;
+    color: #444;
+}
+
+.form__under span svg{font-size: 20px;}
+
+.form__under a{border-bottom: 1px solid transparent;}
+
+.form__under a:hover{border-color: #222; color:#222;}
+
+
+/* Join Form List and Links */
+.form-list{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.form-link{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+
+
+
+/* ===================
+	3. Carousel-slider
+=================== */
+
+/* Carousel slider */
+
+.carousel {
+	background: #fff;
+	overflow: hidden;
+	height: 98.4px;
+	border-top: 1px solid #a1a4a6;
+	border-bottom: 1px solid #a1a4a6;
+}
+
+.flickity-viewport{
+	
+}
+
+.carousel-cell {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 12%;
+	padding: 15px;
+}
+
+.carousel__carousel-cell__svg{
+	height: 50px;
+	width: 50px;
+}
+
+/* cell number */
+.carousel-cell:before {
+}
+
+/* ===================
+	4. Modal Windows
+=================== */
+
+/* Modal Footer */
+.swal-footer{
+	display: flex;
+	justify-content: center;
+}
+
+/* Modal Buttons */
+.swal-button{
+	padding: 15px 50px;
+	outline: none;
+}
+.swal-button:focus{
+	box-shadow: none;
+}
+
+/* Modal Text*/
+.swal-text{
+	text-align: center;
+}
+
+
+/* ===================
+	Mobile Settings 763x1024
+=================== */
+
+@media screen and (min-width: 763px) and (max-width: 1024px){
+
+	/* ===================
+		Settings
+	=================== */
+	hr{
+		width: 60%;
+	}
+
+	/* ===================
+		1. Blocks Page
+	=================== */
+	
+	.block{
+		display: flex;
+		justify-content: center;
+	}
+
+	/* ===================
+		2. Forms
+	=================== */
+
+	.form{
+		width: 60%;
+	}
+
+}
+
+
+
+/* ===================
+	Mobile Settings 100x763
+=================== */
+
+@media screen and (min-width: 100px) and (max-width: 763px){
+
+
+	/* ===================
+		Settings
+	=================== */
+	hr{
+		width: 80%;
+	}
+
+	/* ===================
+		1. Blocks Page
+	=================== */
+	
+	.block{
+		display: flex;
+		justify-content: center;
+	}
+
+	/* ===================
+		2. Forms
+	=================== */
+
+	.form{
+		width: 80%;
+	}
+}
